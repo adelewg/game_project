@@ -4,7 +4,7 @@ Game Project Part 7
 Extensions are:
 1. Sound - I really enjoyed searching and choosing a sound to use in my code and I choose some background music. At first the sound file was too large and I had to crop it - I wish it could be longer. Also I had to put the code in the correct place - at first I had it under the start game function which meant that the sound kept playing on top of itself each time the game restarted. I have not figured out how to make the sound start as soon as you load the game. Currently it start only when the character jumps.
 
-3. Platform - I enjoyed figuring out this challenging extension. I had to iron out a few bugs to make it work and I found it difficult to select the appropriate color for the platform so that it stands out from the rest of the game and its cleat that it is a platform.
+3. Platform - I enjoyed figuring out this challenging extension. I had to iron out a few bugs to make it work and I found it difficult to select the appropriate color for the platform so that it stands out from the rest of the game and its clear that it is a platform.
 
 
 */
@@ -528,7 +528,7 @@ function drawCollectable(t_collectable)
 
 function checkCollectable(t_collectable)
 {
-     if(dist(gameChar_world_x, gameChar_y, t_collectable.x_pos, floorPos_y) < 20)
+     if(dist(gameChar_world_x, gameChar_y, t_collectable.x_pos, t_collectable.y_pos) < 20)
     {
         t_collectable.isFound = true;
         game_score += 1;
