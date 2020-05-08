@@ -473,13 +473,15 @@ function drawTrees()
 
 function drawCanyon(t_canyon)
 {
-    fill(59, 179, 208);
+    fill(0, 105, 180);
         noStroke();
 
         beginShape();    
         vertex(t_canyon.x_pos,floorPos_y);
         vertex(t_canyon.x_pos+t_canyon.width,floorPos_y);   
-        vertex(t_canyon.x_pos+t_canyon.width/2,576);
+        vertex(t_canyon.x_pos+t_canyon.width,576);
+        vertex(t_canyon.x_pos,576);
+    
         endShape();
 }
 
