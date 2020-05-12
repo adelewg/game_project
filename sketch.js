@@ -655,6 +655,7 @@ function startGame()
         {x_pos: -1000,y_pos: floorPos_y,size: 50, isFound: false},
         {x_pos: -500,y_pos: floorPos_y,size: 50, isFound: false},
         {x_pos: 200,y_pos: 340, size: 50, isFound: false},
+        {x_pos: 50,y_pos: 250, size: 50, isFound: false},
         {x_pos: 1600,y_pos: 330, size: 50, isFound: false},
         {x_pos: -1500,y_pos: floorPos_y,size: 50, isFound: false},
         {x_pos: 1000,y_pos: floorPos_y,size: 50, isFound: false},
@@ -668,6 +669,8 @@ function startGame()
         ];
     
     platforms = [];
+    platforms.push(createPlatforms(10,floorPos_y-180,100));
+    platforms.push(createPlatforms(-100,floorPos_y-90,100));
     platforms.push(createPlatforms(150,floorPos_y-90,100));
     platforms.push(createPlatforms(1500,floorPos_y-100,200));
     
